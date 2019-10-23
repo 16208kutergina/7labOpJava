@@ -6,6 +6,6 @@ public class PrinterNumberClasses {
 
     @Advice.OnMethodExit
     static void exit() throws Exception {
-        System.out.println(Agent.inst.getAllLoadedClasses().length);
+        System.out.println("Common classes load "+Agent.inst.getAllLoadedClasses().length);
     }
 }
